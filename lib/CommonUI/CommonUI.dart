@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:linkendin_clone/CommonUI/SmallUIComponents.dart';
 import 'package:linkendin_clone/HomePageUI/HomeSubPages/Search.dart';
+import 'package:linkendin_clone/JobsUI/JobBottomsheet.dart';
 import 'package:linkendin_clone/Strings.dart';
 
 class ProfileImage extends StatelessWidget {
@@ -49,6 +51,9 @@ class AppBarLeading extends StatelessWidget {
 }
 
 class AppBartitle extends StatelessWidget {
+  bool jobs;
+
+  AppBartitle([this.jobs = false]);
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -86,13 +91,28 @@ class AppBartitle extends StatelessWidget {
               ),
               Container(
                 color: Color.fromRGBO(238, 243, 247, 0.9),
-                child: IconButton(
+                child: jobs? Container(): IconButton(
                     onPressed:(){},
                     icon: Icon(Icons.qr_code_rounded,
                       color: Colors.black,)),
               )
             ],
           ),
+         jobs? IconButton(
+             onPressed: (){
+               showModalBottomSheet(
+                   shape: RoundedRectangleBorder(
+                     borderRadius: BorderRadius.only(topLeft: Radius.circular(10.0),
+                       topRight: Radius.circular(10.0),
+                     ),
+                   ),
+                   context: context,
+                   builder: (context){
+                     return JobBottomSheet();
+                   });
+             },
+             icon: CUIcon(Icons.more_vert, Colors.grey.shade800))
+             : Container(),
           Container(
             width: size.width / 100 * 13,
             child: Icon(Icons.message_outlined,
@@ -100,6 +120,21 @@ class AppBartitle extends StatelessWidget {
           ),
         ],
       ),
+    );
+  }
+}
+
+class ListofOptions extends StatelessWidget {
+  IconData icon;
+  String title;
+
+  ListofOptions(this.title, this.icon);
+
+  @override
+  Widget build(BuildContext context) {
+    return  ListTile(
+      leading: CUIcon(icon,Colors.grey.shade800),
+      title: CUText(title, TextAlign.start, 12, true, Colors.grey.shade800),
     );
   }
 }

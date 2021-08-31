@@ -1,5 +1,4 @@
-
-
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 
 class CUText extends StatelessWidget {
@@ -43,3 +42,23 @@ class CUIcon extends StatelessWidget {
     );
   }
 }
+
+class Pictures extends StatelessWidget {
+  String url;
+  double height;
+  double width;
+  BoxFit fit;
+
+  Pictures(this.url, this.width, this.height, this.fit);
+
+  @override
+  Widget build(BuildContext context) {
+    return CachedNetworkImage(
+        imageUrl: url,
+    placeholder:(context, url) => CircularProgressIndicator(),
+    height: height,
+    width: width,
+    fit: fit,);
+  }
+}
+

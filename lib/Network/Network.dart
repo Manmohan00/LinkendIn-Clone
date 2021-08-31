@@ -7,7 +7,7 @@ class Network extends StatelessWidget {
   GlobalKey<ScaffoldState> scaffoldKey = new GlobalKey<ScaffoldState>();
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
+
     return Scaffold(
       key: scaffoldKey,
       appBar: AppBar(

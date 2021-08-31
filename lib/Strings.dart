@@ -69,3 +69,18 @@ class EventsLinks {
   static const String flutter =
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.S92tbMfbRyOREGTRQQBDLwAAAA%26pid%3DApi&f=1";
 }
+
+class JobsLinks{
+  static const String job1 =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.xycsHjySzYqzXWi2dZNUGgHaHa%26pid%3DApi&f=1";
+  static const String job2 =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.QHLSrV9kDMvojZ1bguLXAgHaHa%26pid%3DApi&f=1";
+  static const String job3 =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.5tTorUuSGvz4DNJRWFJQWwHaHa%26pid%3DApi&f=1";
+  static const String job4 =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.1025cxIEjULEPDPp30qMcQHaHa%26pid%3DApi&f=1";
+  static const String job5 =
+  "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g_qb9b-NmBnDLmPxMhLeBwHaHa%26pid%3DApi&f=1";
+  static const String job6 =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.nIgKv45CnQwv8fTtriFBegHaHa%26pid%3DApi&f=1";
+}

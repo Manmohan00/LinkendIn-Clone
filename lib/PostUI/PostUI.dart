@@ -124,7 +124,7 @@ class PostUI extends StatelessWidget {
                                 ),
                                 context: context,
                                 builder: (context){
-                                  return BottomSheetsecond();//The content to be inside the modal sheet
+                                  return BottomSheetsecond();
                                 });
                           },
                             icon: CUIcon(Icons.linear_scale, Colors.grey.shade800)),

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:linkendin_clone/CommonUI/CommonUI.dart';
 import 'package:linkendin_clone/CommonUI/SmallUIComponents.dart';
 import 'package:linkendin_clone/PostUI/PostProvider.dart';
 import 'package:provider/provider.dart';
@@ -156,18 +157,3 @@ class BottomSheetsecond extends StatelessWidget {
   }
 }
 
-
-class ListofOptions extends StatelessWidget {
- IconData icon;
- String title;
-
- ListofOptions(this.title, this.icon);
-
-  @override
-  Widget build(BuildContext context) {
-    return  ListTile(
-      leading: CUIcon(icon,Colors.grey.shade800),
-      title: CUText(title, TextAlign.start, 12, true, Colors.grey.shade800),
-    );
-  }
-}
