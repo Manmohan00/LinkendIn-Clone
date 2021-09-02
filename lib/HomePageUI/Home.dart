@@ -28,7 +28,7 @@ class Home extends StatelessWidget {
                   "33", "3 Comments"),
                   FeedPost(false, StringData.TyrellQuote, StringData.TyrellImage,
                   "Tyrell Wellick", "Senior Vice President at E-Corp", "999",
-                  ""),
+                  "", false),
                 ],
               ),
             ),

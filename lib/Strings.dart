@@ -28,8 +28,15 @@ class StringData {
 
 class NewsLinks {
   static const String news1 =
-      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3"
-      ".mm.bing.net%2Fth%3Fid%3DOIP.0EbDhLSl6f3GOyNXOcfL-gHaHa%26pid%3DApi&f=1";
+      "https://www.sciencenews.org/wp-content/uploads/2021/08/091121_rich-life_feat-330x186.jpg";
+  static const String news2 =
+      "https://www.sciencenews.org/wp-content/uploads/2021/08/100-worlds_spotlight-radio_feat_vla-330x186.jpg";
+  static const String news3 =
+      "https://www.sciencenews.org/wp-content/uploads/2021/08/082621_jl_caterpillar_feat-330x186.jpg";
+  static const String news4=
+      "https://www.sciencenews.org/wp-content/uploads/2021/03/032321_to_column-darkmatter_feat-330x186.jpg";
+  static const String news5 =
+      "https://www.sciencenews.org/wp-content/uploads/2021/08/081421_BB_sn100psych_1440x810-330x186.jpg";
 }
 
 class NetworkLinks {
@@ -83,4 +90,14 @@ class JobsLinks{
   "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.g_qb9b-NmBnDLmPxMhLeBwHaHa%26pid%3DApi&f=1";
   static const String job6 =
       "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.nIgKv45CnQwv8fTtriFBegHaHa%26pid%3DApi&f=1";
+}
+
+class NotifyLinks{
+  static const String commonnotify =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.2DB1Mjq25Ey6RW6l0ZhtxwHaHa%26pid%3DApi&f=1";
+
+  static const String Networknotify =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.gXtIh-IACkXjeiJ5P1AvxQHaGT%26pid%3DApi&f=1";
+  static const String searchesnotify =
+      "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.eQYTDepLq-M_BehfjVRpdwHaHa%26pid%3DApi&f=1";
 }

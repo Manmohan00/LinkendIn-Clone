@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:linkendin_clone/CommonUI/SmallUIComponents.dart';
+import 'package:linkendin_clone/HomePageUI/HomeSubPages/BarCodeCamera.dart';
 import 'package:linkendin_clone/HomePageUI/HomeSubPages/Search.dart';
 import 'package:linkendin_clone/JobsUI/JobBottomsheet.dart';
 import 'package:linkendin_clone/Strings.dart';
@@ -92,7 +93,9 @@ class AppBartitle extends StatelessWidget {
               Container(
                 color: Color.fromRGBO(238, 243, 247, 0.9),
                 child: jobs? Container(): IconButton(
-                    onPressed:(){},
+                    onPressed:(){
+                      Navigator.of(context).pushNamed(BarCodeCamera.id);
+                    },
                     icon: Icon(Icons.qr_code_rounded,
                       color: Colors.black,)),
               )

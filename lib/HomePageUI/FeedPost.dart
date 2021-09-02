@@ -12,9 +12,10 @@ class FeedPost extends StatelessWidget {
   String userPost;
   String likes;
   String comment;
+  bool showcomment;
 
   FeedPost(this.showImage, this.caption, this.imageurl, this.userName, this.userPost,
-      this.likes, this.comment);
+      this.likes, this.comment, [this.showcomment = true]);
   @override
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
@@ -28,13 +29,14 @@ class FeedPost extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          CommentedOnthis(),
-          Divider(
+         showcomment ? CommentedOnthis() : Container(),
+          showcomment ? Divider(
             indent: 10.0,
             endIndent: 10.0,
             thickness: 1.0,
+            height: 10.0,
             color: Colors.grey.shade400,
-          ),
+          ) : Container(),
           FeedPostProfile(imageurl, userName, userPost),
           Caption(caption),
           showImage ? FeedPostImage() : Container(),
@@ -63,6 +65,7 @@ class FeedPostProfile extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Container(
+      padding: EdgeInsets.only(top: 10.0),
       width: size.width,
       decoration: BoxDecoration(
         color: Colors.white,

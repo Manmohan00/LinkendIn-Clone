@@ -9,7 +9,6 @@ class Search extends StatelessWidget {
   TextEditingController txt = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    HomeProvider hp = Provider.of<HomeProvider>(context);
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       backgroundColor: Color.fromRGBO(233, 230, 223, 0.9),

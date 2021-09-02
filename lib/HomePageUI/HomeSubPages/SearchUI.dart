@@ -106,26 +106,33 @@ class News extends StatelessWidget {
           ),),
             Column(
                 children: [
-                  NewsTiles("Heading",
-                      "Sub", NewsLinks.news1),
+                  NewsTiles("Perspective-changing",
+                      "Experiences, good or bad, can lead to richer lives", NewsLinks.news1),
                   Divider(
                     thickness: 1.0,
                     color: Colors.grey.shade400,
                   ),
-                  NewsTiles("heading", "Sub", StringData.FeedPostImage),
+                  NewsTiles("Astronomy",
+                      "How radio astronomy put new eyes on the cosmos", NewsLinks.news2),
                   Divider(
                     thickness: 1.0,
                     color: Colors.grey.shade400,
-                  ),NewsTiles("heading", "Sub", StringData.FeedPostImage),
+                  ),NewsTiles("Insects in danger",
+                      "Streetlights, especially super bright LEDs, may harm insect populations",
+                      NewsLinks.news3),
                   Divider(
                     thickness: 1.0,
                     color: Colors.grey.shade400,
-                  ),NewsTiles("heading", "Sub", StringData.FeedPostImage),
+                  ),NewsTiles("Dark Matter mystery deepens",
+                      "The dark matter mystery deepens with the demise of a reported detection",
+                      NewsLinks.news4),
                   Divider(
                     thickness: 1.0,
                     color: Colors.grey.shade400,
                   ),
-                  NewsTiles("heading", "Sub", StringData.FeedPostImage),
+                  NewsTiles("The struggle of Psychology",
+                      "Psychology has struggled for a century to make sense of the mind",
+                      NewsLinks.news5),
                   Divider(
                     thickness: 1.0,
                     color: Colors.grey.shade400,

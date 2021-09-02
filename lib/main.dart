@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:linkendin_clone/BottomNavProvider.dart';
 import 'package:linkendin_clone/HomePageUI/HomeProvider.dart';
+import 'package:linkendin_clone/HomePageUI/HomeSubPages/BarCodeCamera.dart';
 import 'package:linkendin_clone/HomePageUI/HomeSubPages/Search.dart';
 import 'package:linkendin_clone/JobsUI/Jobs.dart';
 import 'package:linkendin_clone/PostUI/PostProvider.dart';
@@ -39,6 +40,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
+        iconTheme: IconThemeData(color: Colors.black),
         scaffoldBackgroundColor: Color.fromRGBO(233, 230, 223, 0.9),
         appBarTheme: AppBarTheme(
           elevation: 0.0,
@@ -49,6 +51,7 @@ class MyApp extends StatelessWidget {
       routes: {
         Search.id: (context) => Search(),
         Post.id: (context) => Post(),
+        BarCodeCamera.id: (context) => BarCodeCamera(),
       },
     ),
     );
